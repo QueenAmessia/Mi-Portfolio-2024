@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(145, 160, 249);
+    color: white;
+    padding: 10px;
+    animation: transicion 1s linear; 
+}
+
+header .boton {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: white;
+    color: rgb(145, 160, 249);
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    display: block;
+    margin: 10px auto;
+    line-height: 27px;
+    padding: 3px;
+    transition: all 1s;
+}
+
+header .boton:hover {
+    background-color: rgb(59, 58, 58);
+    color: white;
+    border-color: white;
+}
+
+main {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div {
+    width: 45%;
+    padding-top: 20px;
+    transition: transform 0.3s linear; 
+}
+/*
+div:hover {
+    transform: scale(1.02);
+}
+*/
+
+#video {
+    width: 100%;
+    margin: 5px auto;
+}
+
+img, video {
+    width: 100%;
+}
+
+h1, h2, h3, p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+h1, h2 {
+    color: white;
+}
+
+h1 {
+    font-size: 80px;
+    text-transform: capitalize;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 15px;
+    color: rgb(59, 58, 58);
+    padding: 5px;
+}
+
+.headerColor {
+    color: #EFE8E5;
+    text-decoration: none;
+}
+
+.headerColor:hover {
+    color: rgb(59, 58, 58);
+}
+
+@keyframes transicion {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(145, 160, 249);
+    color: white;
+    padding: 20px;
+    animation: transicion 1s linear; 
+}
